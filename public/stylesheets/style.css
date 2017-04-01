@@ -1,8 +1,32 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+html {
+  min-height: 100%;
+  position: relative; }
 
-a {
-  color: #00B7FF; }
+body {
+  margin-bottom: 60px; }
+
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  width: 100%; }
+
+body > .container {
+  padding: 60px 15px 0; }
+
+.footer > .container {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+code {
+  font-size: 80%; }
+
+.banner-section {
+  height: 100vh;
+  padding-top: 54px; }
+  .banner-section .jumbotron {
+    height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
