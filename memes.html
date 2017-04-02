@@ -83,97 +83,22 @@
 					<h1>Home <small><span class="hidden-xs">Website of </span>Daniel Carl Jones</small></h1>
 				</div>
 				<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li class="active"><span>Home</span></li>
+					<li><span>Home</span></li>
+					<li class="active"><span>Meme Counter</span></li>
 				</ol>
 				<!-- /ol.breadcrumb -->
 			</div>
 		</div>
 		<!-- / div.row -->
-		<div class="row">
-			<div class="col-md-10">
-				<h2>Welcome</h2>
-				<noscript>
-                  <div class="alert alert-warning" role="alert">
-                  <strong>No JavaScript!?</strong> You don't appear to have JavaScript enabled which means my website can't be as fancy. <a href="http://www.activatejavascript.org/" target="_blank">Find out how to enable JavaScript</a>.
-                  </div>
-                </noscript>
-				<!-- /noscript -->
-				<div class="jumbotron">
-					<h1>Changes Soon <i class="fa fa-flask"></i></h1>
-					<p>I plan to give my website a refresh and bulk it out with useful content about me and what I do. <em><small>(I promise I'll do it this time!)</small></em></p>
-					<p>In the meantime, feel free to explore the website.</p>
-				</div>
-
-				<h2 id="About">About</h2>
-				<div class="row" itemscope itemtype="http://schema.org/Person">
-					<div class="col-md-6">
-						<p class="lead">Hi, I'm <span itemprop="alternateName">Danny</span>.</p>
-						<span style="display:none;" itemprop="name"><span itemprop="givenName"></span> <span itemprop="additionalName">Carl</span> <span itemprop="familyName">Jones</span></span>
-						<p>I'm a 19 year old from the UK, currently in my second year studying Computer Science at university.</p>
-						<p>My interests include both computer science (mainly software development) and photography. You can check out my <a href="https://500px.com/danielcarl">500px account</a> to catch up with my photography.</p>
-					</div>
-					<div class="col-md-6">
-						<img width="100%" src="images/about-1.jpg" alt="Danny with camera." class="img-rounded">
-						<p class="text-muted text-right"><small>Photograph by <a href="http://www.meljones.info/">Mel Jones Photography</a></small></p>
-					</div>
-				</div>
-				<h2 id="Contact">Contact Danny</h2>
-				<div class="row">
-					<div class="col-sm-6">
-						<p class="lead">Feel free to contact me if you have any questions.</p>
-						<p>You can use the contact form to send an email to me quickly and easily, or use the other methods below.</p>
-						<h4>E-Mail</h4>
-						<ul class="list-group contact-methods">
-							<a class="list-group-item" href="mailto:danny@danielcarl.info"><i class="fa fa-fw fa-lg fa-envelope"></i> danny@danielcarl.info</a>
-						</ul>
-						<h4>Social Media</h4>
-						<div class="list-group fa-color-icons contact-methods">
-							<!-- 			                <a class="list-group-item"  href="http://facebook.com/"><i class="fa fa-fw fa-lg fa-facebook"></i> Facebook Page</a> -->
-							<a class="list-group-item" href="http://blog.danielcarl.info"><i class="fa fa-fw fa-lg fa-tumblr"></i> Photography Tumblr</a>
-							<a class="list-group-item" href="http://500px.com/danielcarl"><i class="fa fa-fw fa-lg fa-500px"></i> 500px.com/danielcarl</a>
-							<a class="list-group-item" href="https://twitter.com/_dannycjones"><i class="fa fa-fw fa-lg fa-twitter"></i> @_dannycjones</a>
-							<a class="list-group-item" href="skype:dancarl97?chat"><i class="fa fa-fw fa-lg fa-skype"></i> dancarl97</a>
-							<a class="list-group-item" href="https://uk.linkedin.com/in/daniel-jones-377aa910a"><i class="fa fa-fw fa-lg fa-linkedin-square"></i> LinkedIn</a>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="well">
-							<form class="contactForm">
-								<legend>Contact Form</legend>
-								<div class="alert alert-danger">
-									<p>Danny's server broke, and they've not got time to setup the email form again! In the meantime, please email at <a href="mailto:danny@danielcarl.info">danny@danielcarl.info</a>.</p>
-								</div>
-								<div class="form-group">
-									<label for="senderName">Name</label>
-									<input disabled type="text" class="form-control" id="senderName" placeholder="Joel Appleseed" data-toggle="tooltip">
-								</div>
-								<div class="form-group">
-									<label for="senderEmail">Email Address</label>
-									<input disabled type="email" class="form-control" id="senderEmail" placeholder="j.appleseed@email.com" data-toggle="tooltip">
-								</div>
-								<div class="form-group">
-									<label for="senderMessage">Your Message</label>
-									<textarea disabled id="senderMessage" class="form-control" rows="3" placeholder="I'm writing to you..." data-toggle="tooltip"></textarea>
-								</div>
-								<input type="submit" data-loading-text="Sending..." class="btn form-control btn-primary submit" value="Send Message" disabled>
-								<div class="alertArea"></div>
-							</form>
-							<!-- /form.contactForm -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2 hidden-sm hidden-xs">
-				<div id="home-nav" data-spy="affix" data-offset-top="170">
-					<ul class="nav nav-pills nav-stacked smooth-scroll">
-						<li role="presentation"><a href="index.html#Home">Home</a></li>
-						<li role="presentation"><a href="index.html#About">About</a></li>
-						<li role="presentation"><a href="index.html#Contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- / div.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <h1>Memes until 07/04/2016 22:00</h1>
+                <p class="meme-counter">DANK!</p>
+            </div>
+        </div>
+    </div>
+    <!-- / div.row -->
 	</div>
 	<!-- / div#body.container -->
 
@@ -316,18 +241,28 @@
 	</script>
 
 	<script>
-		$(document).ready(function() {
-			$('body').scrollspy({
-				target: '#home-nav',
-				offset: 50
-			});
+
+	    function updateMemeCountdown() {
+	        var element = $('.meme-counter');
+	        var date = new Date("04/07/2016 10:00 PM");
+	        var distance = date - new Date();
+	        distance = distance * 0.00010416666;
+	        distance = parseFloat(Math.round(distance * 100) / 100).toFixed(2);
+	        console.log(distance);
+	        element.html(distance);
+	    }
+
+	    $(document).ready(function () {
+	        $('body').scrollspy({ target: '#home-nav', offset: 50 })
 
 
-			$(function() {
-				var $affixElement = $('[data-spy="affix"]');
-				$affixElement.width($affixElement.parent().width());
-			});
-		});
+	        $(function() {
+	            var $affixElement = $('[data-spy="affix"]');
+	            $affixElement.width($affixElement.parent().width());
+	        });
+	        var x = setInterval(updateMemeCountdown, 500);
+	        updateMemeCountdown();
+	    });
 	</script>
 </body>
 
