@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" id="Home">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="author" content="Daniel Carl Jones">
+	<meta name="google-site-verification" content="GBpM8c_e1rufK9unlf2bIr50YwHoA_plZMUP99kRvR4" />
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+		/* To provide font for bootstrap.min.css */
+
+		.navbar-default .navbar-toggle:hover .icon-bar,
+		.navbar-default .navbar-toggle:focus .icon-bar {
+			background-color: #B60084;
+		}
+	</style>
+
+	<!-- animate.css -->
+	<link href="css/animate.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- Prism Code Syntax -->
+	<link rel="stylesheet" href="css/prism.css">
+
+	<!-- Coloured Brand Icons for FA -->
+	<link rel="stylesheet" href="css/fa-colored-brand-icons.min.css">
+
+	<!-- Styling -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body data-spy="scroll">
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+					<a class="navbar-brand" href="index.html">www.danielcarl.info</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="mainnav-collapse">
+					<ul class="nav navbar-nav smooth-scroll">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="projects-and-experience.html">Projects &amp; Experience</a></li>
+						<li><a target="blank" href="cv.pdf">CV</a></li>
+						<li>
+							<a href="index.html#Contact" data-toggle="modal" data-target="#contactModal">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<div id="body" class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="page-header">
+					<h1>Home <small><span class="hidden-xs">Website of </span>Daniel Carl Jones</small></h1>
+				</div>
+				<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li><span>Home</span></li>
+					<li class="active"><span>Meme Counter</span></li>
+				</ol>
+				<!-- /ol.breadcrumb -->
+			</div>
+		</div>
+		<!-- / div.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <h1>Memes until 07/04/2016 22:00</h1>
+                <p class="meme-counter">DANK!</p>
+            </div>
+        </div>
+    </div>
+    <!-- / div.row -->
+	</div>
+	<!-- / div#body.container -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 no-bottom-margin text-center">
+					<p class="text-muted">
+						&copy; <span class="hidden-xs">2012-2017, </span>Daniel Carl Jones. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- / footer.container -->
+
+	<div id="modals">
+		<div class="modal fade" id="contactModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="contactForm">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+			                </button>
+							<h4 class="modal-title">Contact Danny</h4>
+						</div>
+						<div class="modal-body">
+							<div class="alert alert-danger">
+								<p>Danny's server broke, and they've not got time to setup the email form again! In the meantime, please email at <a href="mailto:mail@danielcarl.info">mail@danielcarl.info</a>.</p>
+							</div>
+							<div class="form-group">
+								<label for="senderName">Name</label>
+								<input type="text" class="form-control" id="senderName" placeholder="Joel Appleseed" data-toggle="tooltip" disabled>
+							</div>
+							<div class="form-group">
+								<label for="senderEmail">Email Address</label>
+								<input type="email" class="form-control" id="senderEmail" placeholder="j.appleseed@email.com" data-toggle="tooltip" disabled>
+							</div>
+							<div class="form-group">
+								<label for="senderMessage">Your Message</label>
+								<textarea id="senderMessage" class="form-control" rows="3" placeholder="I'm writing to you..." data-toggle="tooltip" disabled></textarea>
+							</div>
+							<div class="alertArea"></div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<input type="submit" data-loading-text="Sending..." class="btn btn-primary submit" value="Send Message" disabled>
+						</div>
+					</form>
+					<!-- /form.contactForm -->
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+
+		<div class="modal fade" id="loginModal">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<form id="loginForm">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+			                </button>
+							<h4 class="modal-title">Admin Login</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="user_username">Username</label>
+								<input type="text" class="form-control" id="user_username" placeholder="Danny">
+							</div>
+							<div class="form-group">
+								<label for="user_password">Password</label>
+								<input type="password" class="form-control" id="user_password" placeholder="******">
+							</div>
+							<div class="alertArea"></div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<input type="submit" class="btn btn-primary" id="loginFormSubmit" data-login-text="Logging in..." value="Login">
+						</div>
+					</form>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-61675516-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- Isotopes Plugin -->
+	<!--<script src="/js/isotope.pkgd.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
+
+	<!-- Set Client IP Variable -->
+
+	<script>
+		var admin = false;
+	</script>
+
+	<!-- Prism Code Syntax -->
+	<script src="js/prism.js"></script>
+
+	<!-- Main JS Files -->
+	<script src="js/main.js"></script>
+
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			"name": "Daniel Carl",
+			"alternateName": "www.danielcarl.info",
+			"url": "http://www.danielcarl.info"
+		}
+	</script>
+
+	<script>
+
+	    function updateMemeCountdown() {
+	        var element = $('.meme-counter');
+	        var date = new Date("04/07/2016 10:00 PM");
+	        var distance = date - new Date();
+	        distance = distance * 0.00010416666;
+	        distance = parseFloat(Math.round(distance * 100) / 100).toFixed(2);
+	        console.log(distance);
+	        element.html(distance);
+	    }
+
+	    $(document).ready(function () {
+	        $('body').scrollspy({ target: '#home-nav', offset: 50 })
+
+
+	        $(function() {
+	            var $affixElement = $('[data-spy="affix"]');
+	            $affixElement.width($affixElement.parent().width());
+	        });
+	        var x = setInterval(updateMemeCountdown, 500);
+	        updateMemeCountdown();
+	    });
+	</script>
+</body>
+
+</html>
