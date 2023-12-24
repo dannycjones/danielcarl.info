@@ -47,17 +47,18 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "Daniel Carl Jones"
-    subtitle = "Software Engineer"
-    owner = "Daniel Carl Jones"
-    keywords = ""
     copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+    [languages.en.params]
+      subtitle = "Software Engineer"
+      owner = "Daniel Carl Jones"
+      keywords = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
       logoText = "Daniel Carl Jones"
