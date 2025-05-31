@@ -1,15 +1,17 @@
 baseurl = "/"
 languageCode = "en-us"
+# TODO: Replace with Hugo module rather than `themes/terminal` directory
 theme = "terminal"
 paginate = 5
+
+# Required for Chroma and the custom syntax highlighting.
+[markup.highlight]
+  noClasses = false
 
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
-
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
@@ -23,9 +25,6 @@ paginate = 5
   # center theme with default width
   centerTheme = true
 
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
-
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
   showLastUpdated = false
@@ -34,11 +33,12 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "Daniel Carl Jones"
-    copyright = ""
+
     [languages.en.params]
       subtitle = "Software Engineer"
       owner = "Daniel Carl Jones"
       keywords = ""
+      copyright = ""
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -46,10 +46,12 @@ paginate = 5
       olderPosts = "Older posts"
       missingContentMessage = "Page not found..."
       missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
 
-    [languages.en.params.logo]
-      logoText = "Daniel Carl Jones"
-      logoHomeLink = "/"
+      [languages.en.params.logo]
+        logoText = "Daniel Carl Jones"
+        logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -60,4 +62,3 @@ paginate = 5
         identifier = "links"
         name = "Links"
         url = "/#links"
-
