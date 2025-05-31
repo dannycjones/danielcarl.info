@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 # TODO: Replace with Hugo module rather than `themes/terminal` directory
 theme = "terminal"
-paginate = 5
+pagination.pagerSize = 5
 
 # Required for Chroma and the custom syntax highlighting.
 [markup.highlight]
