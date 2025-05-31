@@ -1,0 +1,10 @@
+{{- $industryStartDate := (time (.Get 0)) -}}
+{{- $currentDate := now }}
+{{- $industryYears := (sub $currentDate.Year $industryStartDate.Year) -}}
+{{- if or
+    (lt $currentDate.Month $industryStartDate.Month)
+    (and (eq $currentDate.Month $industryStartDate.Month) (lt $currentDate.Day $industryStartDate.Day))
+-}}
+    {{- $industryYears = sub $industryYears 1 -}}
+{{- end -}}
+{{ $industryYears }}

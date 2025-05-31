@@ -4,7 +4,7 @@ Welcome to my personal webpage. From here, you can learn a little about me and f
 
 ## About Me
 
-I'm a software engineer with more than four years of industry experience.
+I'm a software engineer with more than {{% years-experience "2019-09-02" %}} years of industry experience.
 
 So far I've worked within AWS, working on the service-side of Amazon S3 (S3 Select and S3 Object Lambda)
 as well as the client-side within the open source community
