@@ -7,7 +7,7 @@ Welcome to my personal webpage. From here, you can learn a little about me and f
 I'm a software engineer with more than {{% years-experience "2019-09-02" %}} years of industry experience.
 
 I particularly enjoy working within the open-source community.
-I contribute regularly to [Apache Iceberg](https://iceberg.apache.org/), particular on its Rust library implementation.
+I contribute regularly to [Apache Iceberg](https://iceberg.apache.org/), primarily on its Rust library implementation.
 
 So far I've worked within AWS.
 I work on [Apache Iceberg](https://iceberg.apache.org/) as part of my day job.
